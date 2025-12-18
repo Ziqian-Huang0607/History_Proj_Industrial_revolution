@@ -1,6 +1,6 @@
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion, useScroll } from 'framer-motion';
 import { useRef } from 'react';
-import { Skull, TrendingDown, Flame, BookOpen, Quote, Trees, Factory, Link as LinkIcon, User } from 'lucide-react';
+import { Skull, TrendingDown, Flame, BookOpen, Trees, Factory, Link as LinkIcon, User } from 'lucide-react';
 
 // --- VISUAL COMPONENTS (DATA CARDS) ---
 
@@ -146,7 +146,6 @@ const ArgumentSection = ({ title, subtitle, children, align = "left", visual }: 
 
 export default function App() {
   const containerRef = useRef(null);
-  const { scrollYProgress } = useScroll({ target: containerRef });
   
   return (
     <div ref={containerRef} className="relative bg-black min-h-[300vh] selection:bg-red-500 selection:text-white">
@@ -254,10 +253,10 @@ export default function App() {
             The Industrial Revolution was a <span className="font-bold text-red-500">CURSE</span>.
           </p>
           <p className="text-lg text-stone-400 max-w-2xl mx-auto mb-12">
-            While it built the modern world, it was laid with the suffering of the working class. It destroyed the environment, shortened lives, and enslaved humanity to the machine.
+            While it built the modern world, the foundation was laid with the suffering of the working class. It destroyed the environment, shortened lives, and enslaved humanity to the machine.
           </p>
           <div className="inline-block bg-red-500/20 border border-red-500 text-red-500 px-6 py-2 rounded font-mono text-sm uppercase">
-            Gordon • Unit 3 Project
+            Argument by Gordon • Unit 3 Project
           </div>
         </div>
       </section>
