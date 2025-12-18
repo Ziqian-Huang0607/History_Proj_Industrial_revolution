@@ -1,4 +1,4 @@
-import { motion, useScroll } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useRef } from 'react';
 import { Skull, TrendingDown, Flame, BookOpen, Trees, Factory, Link as LinkIcon, User } from 'lucide-react';
 
